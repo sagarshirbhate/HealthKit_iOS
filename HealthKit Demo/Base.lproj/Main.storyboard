@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="lqX-NB-4Zy">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="dou-7V-ohR">
+            <objects>
+                <navigationController id="lqX-NB-4Zy" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="0Vc-Gl-Mj8">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="lco-a9-KEW"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KER-mg-fgT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-298" y="283"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O1C-iU-I7F">
+                                <rect key="frame" x="40" y="72" width="520" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.2666666667" blue="0.1529411765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Authorizion to get/set Data">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="authorize:" destination="BYZ-38-t0r" eventType="touchUpInside" id="D36-lr-eCe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zla-0k-duN">
+                                <rect key="frame" x="40" y="112" width="520" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Get Data">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="getData:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JSk-YV-G9k"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your BloodGroup is : N/A" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Uv-to-acB">
+                                <rect key="frame" x="40" y="183" width="520" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Skin Type is : N/A" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y1S-fl-YnB">
+                                <rect key="frame" x="40" y="214" width="520" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SEX (Male/Female) : N/A" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nsc-3B-M9D">
+                                <rect key="frame" x="40" y="245" width="520" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Note Weight" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ffy-m4-caV">
+                                <rect key="frame" x="40" y="276" width="150" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="0jx-Qh-RPb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FzH-gT-giT">
+                                <rect key="frame" x="210" y="276" width="350" height="30"/>
+                                <color key="backgroundColor" red="0.25140385100000001" green="0.3697655688" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Submit Weight">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="submitWeight:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YRK-xH-1Zx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LlS-1W-MQN">
+                                <rect key="frame" x="40" y="346" width="520" height="30"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Submit Todays Workout">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="workoutBtnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Wgq-tU-fea"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Birthdate is :  N/A" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7qg-k4-acY">
+                                <rect key="frame" x="40" y="152" width="520" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="LlS-1W-MQN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="2lj-CQ-OK2"/>
+                            <constraint firstItem="O1C-iU-I7F" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="86p-bi-EXJ"/>
+                            <constraint firstItem="FzH-gT-giT" firstAttribute="leading" secondItem="Ffy-m4-caV" secondAttribute="trailing" constant="20" id="8vd-0A-Ywz"/>
+                            <constraint firstItem="O1C-iU-I7F" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="9Ht-S4-ZLx"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Zla-0k-duN" secondAttribute="trailing" constant="20" id="ANb-Tj-9KT"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="O1C-iU-I7F" secondAttribute="trailing" constant="20" id="DMm-kF-PWr"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="9Uv-to-acB" secondAttribute="trailing" constant="20" id="Dnf-oc-eWq"/>
+                            <constraint firstItem="9Uv-to-acB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="FVm-7I-Gns"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="7qg-k4-acY" secondAttribute="trailing" constant="20" id="G5n-IM-UF8"/>
+                            <constraint firstItem="Ffy-m4-caV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="LXu-Dx-8eF"/>
+                            <constraint firstItem="Zla-0k-duN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="MeB-Rx-hQn"/>
+                            <constraint firstItem="LlS-1W-MQN" firstAttribute="top" secondItem="FzH-gT-giT" secondAttribute="bottom" constant="40" id="PhM-VU-YVB"/>
+                            <constraint firstItem="Nsc-3B-M9D" firstAttribute="top" secondItem="y1S-fl-YnB" secondAttribute="bottom" constant="10" id="QPx-GW-kyJ"/>
+                            <constraint firstItem="9Uv-to-acB" firstAttribute="top" secondItem="7qg-k4-acY" secondAttribute="bottom" constant="10" id="SQ4-DA-QXQ"/>
+                            <constraint firstItem="y1S-fl-YnB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="YmT-VU-6jb"/>
+                            <constraint firstItem="y1S-fl-YnB" firstAttribute="top" secondItem="9Uv-to-acB" secondAttribute="bottom" constant="10" id="a9I-FT-kTe"/>
+                            <constraint firstItem="7qg-k4-acY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="acd-6S-LK8"/>
+                            <constraint firstItem="Ffy-m4-caV" firstAttribute="top" secondItem="Nsc-3B-M9D" secondAttribute="bottom" constant="10" id="ag0-Gp-1b5"/>
+                            <constraint firstItem="Nsc-3B-M9D" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="euQ-As-pRe"/>
+                            <constraint firstItem="FzH-gT-giT" firstAttribute="centerY" secondItem="Ffy-m4-caV" secondAttribute="centerY" id="fc2-Kq-GTk"/>
+                            <constraint firstItem="Zla-0k-duN" firstAttribute="top" secondItem="O1C-iU-I7F" secondAttribute="bottom" constant="10" id="hTr-bi-all"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="LlS-1W-MQN" secondAttribute="trailing" constant="20" id="hhy-Ox-vcT"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="FzH-gT-giT" secondAttribute="trailing" constant="20" id="qIQ-1w-5RJ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Nsc-3B-M9D" secondAttribute="trailing" constant="20" id="uVq-aw-a2s"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="y1S-fl-YnB" secondAttribute="trailing" constant="20" id="w9R-GT-OAI"/>
+                            <constraint firstItem="7qg-k4-acY" firstAttribute="top" secondItem="Zla-0k-duN" secondAttribute="bottom" constant="10" id="wsH-Cy-Tan"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="kjU-J1-oVq"/>
+                    <connections>
+                        <outlet property="authorizeBtn" destination="O1C-iU-I7F" id="Hx0-Fw-PMG"/>
+                        <outlet property="birthdateLbl" destination="7qg-k4-acY" id="q9X-Ad-adg"/>
+                        <outlet property="bloodGroupLbl" destination="9Uv-to-acB" id="t6l-MP-5Jf"/>
+                        <outlet property="getDataBtn" destination="Zla-0k-duN" id="9au-ix-GZo"/>
+                        <outlet property="sexLbl" destination="Nsc-3B-M9D" id="eU0-oe-gwp"/>
+                        <outlet property="skinTypeLbl" destination="y1S-fl-YnB" id="ajs-TE-ZOC"/>
+                        <outlet property="submitWeightBtn" destination="FzH-gT-giT" id="6sd-ZE-sbe"/>
+                        <outlet property="weightTF" destination="Ffy-m4-caV" id="c4g-37-07I"/>
+                        <outlet property="workoutBtn" destination="LlS-1W-MQN" id="C4v-Z2-VFi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
